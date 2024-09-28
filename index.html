@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugando con números</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+
+        <div>
+            <button v-on:click="decrementar">DECREMENTAR</button>
+            <span id="number">{{ numero }}</span>
+            <button v-on:click="incrementar">INCREMENTAR</button>
+        </div>
+
+        <table>
+            <tr>
+                <th>BINARIO</th>
+                <th>VALOR</th>
+            </tr>
+            <tr>
+                <td>{{ binario }}</td>
+                <td>{{ valorTexto }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
